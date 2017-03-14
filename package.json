@@ -1,0 +1,12 @@
+{
+  "name": "@niklas/nodepy-nose",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Use nosetests with Node.py",
+  "bin": {
+    "nodepy-nose": "index"
+  },
+  "python-dependencies": {
+    "nose": ">=1.3.7"
+  }
+}
