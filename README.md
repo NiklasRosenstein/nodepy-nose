@@ -1,10 +1,11 @@
-# Node.py Nosetests
+# nodepy/nose
 
 This package provides a simple command to execute `nosetests` from a Node.py
-context. Simply install the package and you're good to go.
+context. Simply install the package and use `nodepy-nosetests` as a
+replacement for `nosetests`.
 
-    ppym install @niklas/nodepy-nose
-    $ nodepy-nose .
+    ppym install @nodepy/nose
+    $ nodepy-nosetests .
     .......
     ----------------------------------------------------------------------
     Ran 7 tests in 0.010s

@@ -1,10 +1,12 @@
 {
-  "name": "@niklas/nodepy-nose",
-  "version": "0.0.1",
+  "name": "@nodepy/nose",
+  "version": "0.0.2",
+  "author": "Niklas Rosenstein <rosensteinniklas@gmail.com>",
+  "description": "integration of nosetests with nodepy",
   "license": "MIT",
-  "description": "Use nosetests with Node.py",
+  "repository": "https://github.com/nodepy/nose",
   "bin": {
-    "nodepy-nose": "index"
+    "nodepy-nosetests": "index"
   },
   "python-dependencies": {
     "nose": ">=1.3.7"
