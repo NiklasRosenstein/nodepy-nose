@@ -61,5 +61,10 @@ class TestLoader(Plugin):
     loader.suiteClass = CustomFactory(self.loader.config)
 
 
+# Allow requiring modules from the current working directory. This is
+# needed so that #TestLoader.loadTestsFromName() can find the files
+# specified on the command-line.
+require.path.insert(0, '.')
+
 if require.main == module:
   nose.main(plugins=[TestLoader()])

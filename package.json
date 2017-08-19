@@ -1,6 +1,6 @@
 {
   "name": "@nodepy/nose",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Niklas Rosenstein <rosensteinniklas@gmail.com>",
   "description": "integration of nosetests with nodepy",
   "license": "MIT",
