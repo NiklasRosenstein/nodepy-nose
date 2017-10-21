@@ -1,18 +1,30 @@
-# nodepy/nose
+# nodepy-nose
 
-This package provides a simple command to execute `nosetests` from a Node.py
-context. Simply install the package and use `nodepy-nosetests` as a
-replacement for `nosetests`.
+This package enables you to use the Python `nose` module for running test
+cases on your Node.py packages.
 
-    ppym install @nodepy/nose
+    $ nodepy-pm install --save-dev nodepy-nose
     $ nodepy-nosetests .
-    .......
-    ----------------------------------------------------------------------
-    Ran 7 tests in 0.010s
 
-    OK
+For this you need to place your `*_test.py` files in the same directory as
+your source files. For example:
+
+    nodepy-package.toml
+    lib/
+      semver.py
+      semver_test.py
+
+You can also place them in a `test` directory and glob the test files. Eg:
+
+    $ ls test/
+    semver.py
+    $ nodepy-nosetests test/*.py
 
 ## Changelog
+
+### 0.0.4
+
+* Transition to Node.py and nodepy-pm 2
 
 ### v0.0.3
 

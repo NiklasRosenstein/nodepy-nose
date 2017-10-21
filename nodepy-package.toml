@@ -1,0 +1,14 @@
+[package]
+name = "nodepy-nose"
+version = "0.0.4"
+description = "Use nosetests in Node.py packages."
+license = "MIT"
+
+[authors]
+"Niklas Rosenstein" = { email = "rosensteinniklas@gmail.com" }
+
+[bin]
+nodepy-nosetests = "index"
+
+[dependencies.python]
+nose = ">=1.3.7"
