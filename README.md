@@ -1,30 +1,43 @@
-# nodepy-nose
+## nodepy-nose
 
 This package enables you to use the Python `nose` module for running test
 cases on your Node.py packages.
 
-    $ nodepy-pm install --save-dev nodepy-nose
+### Installation
+
+    $ nodepypm install --save-dev git+https://github.com/nodepy/nodepy-nosetests.git
     $ nodepy-nosetests .
 
-For this you need to place your `*_test.py` files in the same directory as
-your source files. For example:
+### Usage
+
+Place your `*_test.py` files in the same directory as your source files:
 
     nodepy-package.toml
     lib/
       semver.py
       semver_test.py
 
-You can also place them in a `test` directory and glob the test files. Eg:
+You can also place them in a `test` directory and glob the test files:
 
     $ ls test/
     semver.py
     $ nodepy-nosetests test/*.py
 
+Your tests are loaded just like normal Node.py modules:
+
+```python
+from nose.tools import *
+import {Version} from './semver'
+
+def test_version():
+  # ...
+```
+
 ## Changelog
 
-### 0.0.4
+### 0.0.4/0.0.5
 
-* Transition to Node.py and nodepy-pm 2
+* Transition to Node.py and nodepypm 2
 
 ### v0.0.3
 
