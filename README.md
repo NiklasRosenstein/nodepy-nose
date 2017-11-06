@@ -35,6 +35,10 @@ def test_version():
 
 ## Changelog
 
+### v0.0.6
+
+* Greatly simplified implementation by implementing a custom `Importer`
+
 ### 0.0.4/0.0.5
 
 * Transition to Node.py and nodepypm 2

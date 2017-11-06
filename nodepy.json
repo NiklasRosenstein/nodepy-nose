@@ -1,7 +1,7 @@
 {
   "name": "nodepy-nosetests",
-  "version": "0.0.5",
-  "description": "Alternative nosetests command-line that plugs-in compatibility with Node.py packages.",
+  "version": "0.0.6",
+  "description": "Alternative nosetests command-line that enables compatibility with Node.py packages.",
   "license": "MIT",
   "authors": [
     "rosensteinniklas@gmail.com"
