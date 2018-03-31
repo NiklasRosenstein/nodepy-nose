@@ -5,6 +5,12 @@ import unittest
 import sys
 
 
+class ContextSuiteFactory(nose.suite.ContextSuiteFactory):
+
+  def ancestry(self, context):
+    return; yield
+
+
 class Importer(nose.importer.Importer):
 
   def importFromPath(self, filename, module):
@@ -17,4 +23,6 @@ class Importer(nose.importer.Importer):
 require.path.insert(0, '.')
 
 if require.main == module:
-  nose.main(testLoader=nose.loader.TestLoader(importer=Importer()))
+  testLoader = nose.loader.TestLoader(importer=Importer())
+  testLoader.suiteClass = ContextSuiteFactory()
+  nose.main(testLoader=testLoader)
